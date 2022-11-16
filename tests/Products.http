@@ -12,5 +12,12 @@ GET http://localhost:4004/catalog/Products?
 POST http://localhost:4004/catalog/Products
 Content-Type: application/json
 
-{"ID":"a9fe4b01-ccd3-4369-821c-291a7552dffb" 
+{"ID":"a9fe4b01-ccd3-4369-821c-291a7552dffe" 
+}
+
+### Submit Products
+POST http://localhost:4004/catalog/Suppliers
+Content-Type: application/json
+
+{"ID":"12726eec-165c-3713-a674-3d2fc4f5127b" 
 }
