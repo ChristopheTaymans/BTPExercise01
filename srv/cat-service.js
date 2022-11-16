@@ -10,7 +10,7 @@ module.exports = cds.service.impl(function () {
         this.after(['CREATE', 'UPDATE', 'DELETE'], [Products], async (Product, req) => {
             const header = req.data
             req.on('succeeded', () => {
-                global.it || console.log(`< emitting: product_Changed ${Product.ID}`)
+                global.it || console.log(`< emitting: product_Changed ******************************************************* ${Product.ID} ${Product.identifier}`)
                 this.emit('prod_Change', header)
             })
         })
